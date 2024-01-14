@@ -1,4 +1,10 @@
 
 <h2>Property Bindings</h2>
 
-<button>Bind</button>
+<div class="container">
+
+    <button (click)="showImage()"> --Bind-- </button>
+
+    <img [src]="imagePath" *ngIf="visible">
+
+</div>
